@@ -67,7 +67,18 @@ body {
 a:link {
     text-decoration: none
 }
-
+#main-section{
+    height: 100%;
+}
+#phone-details{
+    display: none;
+}
+#loading{
+    display: none;
+}
+#not-found{
+    display: none;
+}
 #page-footer{
     background-color: lightblue;
 }

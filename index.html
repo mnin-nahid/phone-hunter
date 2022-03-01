@@ -19,29 +19,107 @@
     <header id="hrader-section">
         <!-- wabsite logo -->
         <div id="main-logo">
-            <img class="rounded mx-auto d-block" src="images/logo.png" alt="">
+            <img class="mx-auto d-block" src="images/logo.png" alt="">
         </div>
         <!-- search option -->
         <div class="d-flex justify-content-center px-5 ">
-            <div class="search mb-3"> 
-                <input type="text" class="search-input" placeholder="Search..." name=""> 
-                <a href="#" class="search-icon"> 
-                    <i class="fa fa-search"></i> 
+            <div class="search mb-3">
+                <input id="input-search-fild" type="text" class="search-input" placeholder="Search..." name="">
+                <a href="#" id="search-button" class="search-icon">
+                    <i class="fa fa-search"></i>
                 </a>
             </div>
         </div>
         </div>
         <!-- navigation section -->
     </header>
-    <main>
-        <p>main section</p>
+    <main id="main-section">
+        <section id="phone-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="rounded mx-auto d-block" src="images/phone-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Xiaomi Redmi Note 10 Pro 8GB/128GB - Specification</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="loading">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <section id="not-found">
+            <div class="d-flex justify-content-center">
+                <h2>No Phone Found !!</h2>
+            </div>
+        </section>
+        <section id="scarch-result">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="shadow p-3 mb-5 bg-body rounded">
+                            <img class="mx-auto d-block" src="images/phone-1.jpg" alt="">
+                            <p>Xiaomi Redmi Note 10 Pro 8GB/128GB</p>
+                            <p>Tk 2999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="page-footer" class="text-white d-flex justify-content-around p-2 ">
         <div>
-            <p>© Copyright 2013-2022 MobileDokan.com | All Rights Reserved</p>
+            <small>© Copyright 2013-2022 MobileDokan.com | All Rights Reserved</small>
         </div>
         <div>
-            <p>Privacy Policy - Contact</p>
+            <small>Privacy Policy - Contact</small>
         </div>
     </footer>
     <!-- js connection -->
