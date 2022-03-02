@@ -92,6 +92,9 @@ a:link {
 #search-your-phone div{
     height: 400px;
 }
+#see-more-button{
+    display: none;
+}
 #page-footer{
     background-color: #77b3ca;
 }

@@ -13,7 +13,6 @@ const phoneDetails = id => {
 const showPhoneDetails = data => {
     const showPhoneSection = document.getElementById('phone-details');
     showPhoneSection.style.display = "block";
-    console.log(data)
     showPhoneSection.innerHTML = `
         <div class="container p-3">
                 <div class="row">
@@ -42,6 +41,10 @@ const showPhoneDetails = data => {
                                 <tr>
                                     <td>Memory</td>
                                     <td>${data.mainFeatures.storage}</td>
+                                </tr>
+                                <tr>
+                                    <td>Sensors</td>
+                                    <td>${data.mainFeatures.sensors}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -82,19 +85,14 @@ const showPhoneDetails = data => {
     `;
 }
 const displayData = phones => {
-    // const phoneDetails = document.getElementById('phone-details');
     const showPhone = document.getElementById('scarch-result');
-    // document.getElementById('scarch-result').textContent = "";
     document.getElementById('not-found').style.display = "block";
     document.getElementById('search-your-phone').style.display = "none";
-    console.log(phones);
+    let totalPhone = 0;
     for (const phone of phones) {
-        if(phones.lenth === 20){
-            console.log("nooooooooooo");
-        }
-        // console.log(phone);
         document.getElementById('not-found').style.display = "none";
         document.getElementById('search-your-phone').style.display = "none";
+        document.getElementById('see-more-button').style.display = 'none';
         const div = document.createElement('div');
         div.classList.add('col-lg-3');
         div.classList.add('col-md-4');
@@ -112,12 +110,16 @@ const displayData = phones => {
         </div>
         `;
         showPhone.appendChild(div);
+        
+        if(totalPhone === 19){
+            document.getElementById('see-more-button').style.display = 'block';
+            break;
+        };
+        totalPhone ++
     }
     document.getElementById('spinner').style.display = 'none';
 }
-// const mnin = lodeData('oppo');
-// console.log(mnin);
-document.getElementById('search-button').addEventListener('click', function () {
+document.getElementById('search-button').addEventListener('click', show = () => {
     
     const searchFild = document.getElementById('input-search-fild').value;
     lodeData(searchFild);
