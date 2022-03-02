@@ -1,9 +1,9 @@
-body {
-    background-color: white;
+body{
+    background-color: rgb(214, 226, 238);
 }
 
 #hrader-section {
-    background-color: lightblue;
+    background-color: #77b3ca;
 }
 #main-logo{
     display: block;
@@ -39,7 +39,7 @@ body {
     padding: 0 10px;
     width: 100%;
     caret-color: #536bf6;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 300;
     color: black;
     transition: width 0.4s linear
@@ -73,12 +73,25 @@ a:link {
 #phone-details{
     display: none;
 }
-#loading{
+#spinner{
     display: none;
+}
+#spinner>div{
+    /* border: 2px solid rebeccapurple; */
+    height: 400px;
 }
 #not-found{
     display: none;
 }
+#not-found div{
+    height: 400px;
+}
+#search-your-phone{
+    display: block;
+}
+#search-your-phone div{
+    height: 400px;
+}
 #page-footer{
-    background-color: lightblue;
+    background-color: #77b3ca;
 }

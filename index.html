@@ -18,8 +18,9 @@
 <body>
     <header id="hrader-section">
         <!-- wabsite logo -->
-        <div id="main-logo">
-            <img class="mx-auto d-block" src="images/logo.png" alt="">
+        <div id="main-logo" class="d-flex justify-content-center">
+            <!-- <img class="mx-auto d-block" src="images/logo.png" alt=""> -->
+            <h1>Phone Specification</h1>
         </div>
         <!-- search option -->
         <div class="d-flex justify-content-center px-5 ">
@@ -34,87 +35,104 @@
         <!-- navigation section -->
     </header>
     <main id="main-section">
-        <section id="phone-details">
-            <div class="container">
+        <section id="phone-details" class="shadow p-3 m-5 rounded-3 bg-body">
+            <!-- <div class="container p-3">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img class="rounded mx-auto d-block" src="images/phone-1.jpg" alt="">
+                    <div class="col-md-6 d-flex img-fluid">
+                        <img class="d-flex mx-auto" src="images/phone-1.jpg" alt="">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <h3>Xiaomi Redmi Note 10 Pro 8GB/128GB - Specification</h3>
                         <table class="table">
                             <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
+                                <h4>Main Features</h4>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Release Date</td>
+                                    <td>none</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
+                                    <td>ChipSet</td>
                                     <td>Thornton</td>
-                                    <td>@fat</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
+                                    <td>Display</td>
                                     <td>Thornton</td>
-                                    <td>@fat</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
+                                    <td>Memory</td>
                                     <td>Thornton</td>
-                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <h4>Others Features</h4>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bluetooth</td>
+                                    <td>none</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
+                                    <td>GPS</td>
                                     <td>Thornton</td>
-                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>NFC</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>Radio</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>USB</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>WLAN</td>
+                                    <td>Thornton</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <section id="loading">
-            <div class="d-flex justify-content-center">
+        <section id="spinner">
+            <div class="d-flex justify-content-center align-items-center">
                 <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
         </section>
         <section id="not-found">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center align-items-center">
                 <h2>No Phone Found !!</h2>
             </div>
         </section>
-        <section id="scarch-result">
+        <section id="search-your-phone">
+            <div class="d-flex justify-content-center align-items-center">
+                <h2>Search your Phone!</h2>
+            </div>
+        </section>
+        <section>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="row py-3" id="scarch-result">
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="shadow p-3 mb-5 bg-body rounded">
                             <img class="mx-auto d-block" src="images/phone-1.jpg" alt="">
                             <p>Xiaomi Redmi Note 10 Pro 8GB/128GB</p>
                             <p>Tk 2999</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
     </main>
-    <footer id="page-footer" class="text-white d-flex justify-content-around p-2 ">
+    <footer id="page-footer" class="d-flex justify-content-around p-2">
         <div>
             <small>© Copyright 2013-2022 MobileDokan.com | All Rights Reserved</small>
         </div>
@@ -127,6 +145,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    
 
 </body>
 
